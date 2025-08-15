@@ -1,0 +1,41 @@
+让我们开始写作！
+首先，在项目根目录执行：pnpm new-post <这里填写你的文章标题>
+
+然后，在根目录下的 src/content/posts 文件夹中会多出一个 xxx.md文件
+
+我们使用MarkText打开这个文件，你可以看到一些基本信息，我们只需要关注几个重要的信息
+
+	title：文章标题
+
+	published：文章创建时间
+
+	description：文章描述，正常会显示在文章标题下面
+
+	image：文章封面图（同目录需要写 ./ 如：./https://eo-r2.2x.nz/myblog/img/2024-10-14-11-33-28-image.webp）
+
+	tag：文章标签
+
+	categories：文章分类
+
+
+
+
+
+
+
+本地预览，然后发布到Github
+当你认为你的文章已经写得差不多时，想要看看效果？请到项目根目录执行：pnpm dev，稍等片刻，你就可以本地预览你的博客啦
+
+好！接下来我们需要使用Git将我们所做的更改发布到Github
+
+首先，你需要让Git知道你是谁：git config --global user.name "你的Github用户名"和git config --global user.email "你的Github邮箱@example.com"
+
+然后，更改远程仓库为ssh*（如果是通过ssh克隆的不用改）：git remote set-url origin git@github.com:xxx/xxx
+
+随后，让我们提交所有文件：git add .
+
+之后，让我们发布一个本地提交：git commit -m "项目初始化"
+
+最后，让我们将本地更改提交到远程仓库：git push
+
+此时，你的Github仓库应该已经有了新的提交
